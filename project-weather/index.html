@@ -21,11 +21,20 @@
 <body id="body">
   <h1>Weather API</h1>
 
+  <div class="search-container">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Enter city name and press Enter..." 
+    />
+  </div>
+
   <section>
     <div class="todays-numbers">
       <p>
-        <span id="shortDescription">Short description placeholder</span> | <span id="temperature">Temperature
-          placeholder</span>
+        <span id="city">City placeholder</span> | 
+        <span id="shortDescription">Short description placeholder</span> | 
+        <span id="temperature">Temperature placeholder</span>
       </p>
     </div>
     <div class="todays-description">
@@ -35,6 +44,22 @@
         alt="Weather icon"
       />
       <h2 id="description">Description placeholder</h2>
+    </div>
+    <div class="sunrise-sunset">
+      <div class="sun-info">
+        <span>Sunrise:</span>
+        <span id="sunrise">--:-- AM</span>
+      </div>
+      <div class="sun-info">
+        <span>Sunset:</span>
+        <span id="sunset">--:-- PM</span>
+      </div>
+    </div>
+    <div class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastContainer" class="forecast-items">
+        <!-- Forecast items will be populated by JavaScript -->
+      </div>
     </div>
   </section>
 
